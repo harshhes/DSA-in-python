@@ -8,8 +8,8 @@ class Solution:
             right = len(nums)-1
             
             while left < right:
-                if left >=len(nums) or right < 0:
-                    break
+                # if left >=len(nums) or right < 0:
+                #     break
                 curr_sum = nums[i] + nums[left] + nums[right]
 
                 if abs(curr_sum - target) < abs(closest_sum - target):
