@@ -5,15 +5,12 @@ class Solution:
         stack = []
         
         for i in s:
-            if i in pointer:
-                
+            if i in pointer:    
                 if stack and stack[-1] == pointer[i]:
                     stack.pop()
                 else:
-                    return False
-            
+                    return False                    
             else:
                 stack.append(i)
-                
-        return not stack
             
+        return not stack
