@@ -10,12 +10,11 @@ class Solution:
             area = (r-l) * min(height[l], height[r])
             ans  = max(ans, area)
             
-            if height[l] < height[r]:
+            if height[l] < height[r] or height[l] == height[r]:
                 l += 1
-            else:
+            elif height[l] > height[r]:
                 r -= 1
-            
-            print(area)
+            # print(area)
             
         return ans
             
